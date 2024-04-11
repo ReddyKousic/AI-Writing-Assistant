@@ -54,7 +54,9 @@ function ApiRequestForm() {
 
   return (
     <div>
-      <h1>AI-Writing-Assistant</h1>
+      
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',backgroundColor:'black',color:'white',padding:'10px',gap:'10px'}}><img src='https://avatars.githubusercontent.com/u/82580313?s=200&v=4' style={{width:'80px'}}/><h1>AI-Writing-Assistant</h1></div>
+      <br />
       <form onSubmit={handleSubmit}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
           <textarea
