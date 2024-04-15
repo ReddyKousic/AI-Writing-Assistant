@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "5000:5000"
+
+  frontend:
+    image: nginx:alpine
+    volumes:
+      - ./frontend/build:/usr/share/nginx/html
+    ports:
+      - "3000:80"
