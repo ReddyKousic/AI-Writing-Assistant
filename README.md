@@ -14,7 +14,7 @@ python GEC_file.py
 ### Starting the Docker containers
 The following command runs Docker containers in the background (`-d` for detach). You can interact with the containers in Docker Desktop or in Command Line if you are comfortable with it.
 > [!IMPORTANT]  
-> This will take some time for the first time.
+> This will take few minutes for the first time.
 ```bash
  docker-compose up -d
 ```
