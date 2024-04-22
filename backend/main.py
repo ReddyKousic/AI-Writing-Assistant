@@ -3,7 +3,7 @@ from transformers import T5ForConditionalGeneration, T5Tokenizer
 from flask_cors import CORS
 import os
 
-app = Flask(__name__)
+app = Flask(__name__) 
 CORS(app)
 
 """Loading the saved model and tokenizer from the specified directory."""
@@ -12,7 +12,7 @@ def load_model(model_dir):
     loaded_model = T5ForConditionalGeneration.from_pretrained(model_dir)
     loaded_tokenizer = T5Tokenizer.from_pretrained(model_dir)
     return loaded_model, loaded_tokenizer
-model_dir = "saved_grammar_corrector_model"
+model_dir = "saved_grammar_corrector_model2"
 model, tokenizer = load_model(model_dir)
 def correct_grammar(input_text, num_return_sequences):
     """Correct the grammar of the input text using the saved model."""
